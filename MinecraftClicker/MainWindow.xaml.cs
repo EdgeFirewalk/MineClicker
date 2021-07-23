@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using Utilities;
 using System.Windows.Resources;
 using System.Windows.Media;
+using System.Media;
 
 namespace MinecraftClicker
 {
