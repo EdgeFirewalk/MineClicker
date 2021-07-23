@@ -1,0 +1,31 @@
+﻿<Window x:Name="MineClickerMainWindow" x:Class="MinecraftClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MinecraftClicker"
+        mc:Ignorable="d"
+        Title="MineClicker (Activated)" Height="250" Width="460" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Resources\icon.ico">
+    <Grid x:Name="mainGrid">
+        <Image HorizontalAlignment="Left" Height="221" VerticalAlignment="Top" Width="454" Source="Resources/back.jpg" Stretch="Fill"/>
+
+        <Label Content="HOTKEY" HorizontalAlignment="Left" Margin="161,0,0,0" VerticalAlignment="Top" FontFamily="/MinecraftClicker;component/Resources/#Minecraft" Foreground="White" Width="170" HorizontalContentAlignment="Center" FontSize="20" Height="29"/>
+        <Label Content="INTERVAL" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" FontFamily="/MinecraftClicker;component/Resources/#Minecraft" Foreground="White" Width="109" HorizontalContentAlignment="Center" FontSize="20" Height="29"/>
+
+        <Label Content="Quick Break:" HorizontalAlignment="Left" Margin="1,25,0,0" VerticalAlignment="Top" Height="37" Width="160" FontFamily="Minecraft" FontSize="25" Foreground="White"/>
+        <TextBox x:Name="quickBreakTextBox" Text="P" HorizontalAlignment="Left" Height="33" Margin="161,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" KeyDown="quickBreakTextBox_KeyDown" IsEnabled="False"/>
+        <TextBox x:Name="quickBreakIntervalTextBox" Text="500" HorizontalAlignment="Left" Height="33" Margin="336,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
+
+        <Label Content="Quick Build:" HorizontalAlignment="Left" Margin="1,67,0,0" VerticalAlignment="Top" Height="37" Width="160" FontFamily="Minecraft" FontSize="25" Foreground="White"/>
+        <TextBox x:Name="quickBuildTextBox" Text="B" HorizontalAlignment="Left" Height="33" Margin="161,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" IsEnabled="False" KeyDown="quickBuildTextBox_KeyDown"/>
+        <TextBox x:Name="quickBuildIntervalTextBox" Text="500" HorizontalAlignment="Left" Height="33" Margin="336,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
+
+        <Label Content="Replace:" HorizontalAlignment="Left" Margin="1,108,0,0" VerticalAlignment="Top" Height="38" Width="160" FontFamily="Minecraft" FontSize="25" Foreground="White"/>
+        <TextBox x:Name="quickReplaceTextBox" Text="F" HorizontalAlignment="Left" Height="34" Margin="161,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" KeyDown="replaceTextBox_KeyDown" IsEnabled="False"/>
+        <TextBox x:Name="quickReplaceIntervalTextBox" Text="100" HorizontalAlignment="Left" Height="34" Margin="336,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
+
+        <Button x:Name="disableClickerButton" Content="Deactivate" HorizontalAlignment="Left" Margin="324,161,0,0" VerticalAlignment="Top" Width="114" Height="43" Click="disableClickerButton_Click" FontFamily="Minecraft" FontSize="20"/>
+
+        <Label Content="by EdgeFirew4lk" HorizontalAlignment="Left" Margin="1,186,0,0" VerticalAlignment="Top" Width="161" Foreground="#FFA539E2" FontFamily="/MinecraftClicker;component/Resources/#Minecraft" FontSize="15"/>
+    </Grid>
+</Window>
