@@ -2,4 +2,11 @@
  
 A simple clicker designed specially for Minecraft needs
 
-![readme](https://user-images.githubusercontent.com/64972579/126775151-7d1a7bee-7dd3-4f84-b90a-28b35cd26d29.JPG)
+![1234232234](https://user-images.githubusercontent.com/64972579/126785280-70d2d5a8-6292-4c7c-adba-bc9314574065.JPG)
+
+## HOW TO USE
+Press P, B and F buttons to use the clicker. Use the same buttons to activate or deactivate particular mode.<br>
+You can <b>deactivate</b> clicker to: 
+* Change button settings
+* Change interval settings (Interval is time between two clicks in particular mode)
+* Use your keyboard without activating one of clicker's modes (In chats for example)
