@@ -8,14 +8,16 @@ namespace Utilities {
 	/// <summary>
 	/// A class that manages a global low level keyboard hook
 	/// </summary>
-	class GlobalKeyboardHook {
+	class GlobalKeyboardHook 
+	{
 		#region Constant, Structure and Delegate Definitions
 		/// <summary>
 		/// defines the callback type for the hook
 		/// </summary>
 		public delegate int keyboardHookProc(int code, int wParam, ref keyboardHookStruct lParam);
 
-		public struct keyboardHookStruct {
+		public struct keyboardHookStruct 
+		{
 			public int vkCode;
 			public int scanCode;
 			public int flags;
@@ -56,7 +58,8 @@ namespace Utilities {
 		/// <summary>
 		/// Initializes a new instance of the <see cref="GlobalKeyboardHook"/> class and installs the keyboard hook.
 		/// </summary>
-		public GlobalKeyboardHook() {
+		public GlobalKeyboardHook() 
+		{
 			Hook();
 		}
 
@@ -64,7 +67,8 @@ namespace Utilities {
 		/// Releases unmanaged resources and performs other cleanup operations before the
 		/// <see cref="GlobalKeyboardHook"/> is reclaimed by garbage collection and uninstalls the keyboard hook.
 		/// </summary>
-		~GlobalKeyboardHook() {
+		~GlobalKeyboardHook() 
+		{
 			UnHook();
 		}
 		#endregion
@@ -84,7 +88,8 @@ namespace Utilities {
 		/// <summary>
 		/// Uninstalls the global hook
 		/// </summary>
-		public void UnHook() {
+		public void UnHook() 
+		{
 			UnhookWindowsHookEx(hhook);
 		}
 
@@ -95,14 +100,20 @@ namespace Utilities {
 		/// <param name="wParam">The event type</param>
 		/// <param name="lParam">The keyhook event information</param>
 		/// <returns></returns>
-		public int hookProc(int code, int wParam, ref keyboardHookStruct lParam) {
-			if (code >= 0) {
+		public int hookProc(int code, int wParam, ref keyboardHookStruct lParam) 
+		{
+			if (code >= 0) 
+			{
 				Keys key = (Keys)lParam.vkCode;
-				if (HookedKeys.Contains(key)) {
+				if (HookedKeys.Contains(key)) 
+				{
 					KeyEventArgs kea = new KeyEventArgs(key);
-					if ((wParam == WM_KEYDOWN || wParam == WM_SYSKEYDOWN) && (KeyDown != null)) {
+					if ((wParam == WM_KEYDOWN || wParam == WM_SYSKEYDOWN) && (KeyDown != null)) 
+					{
 						KeyDown(this, kea) ;
-					} else if ((wParam == WM_KEYUP || wParam == WM_SYSKEYUP) && (KeyUp != null)) {
+					} 
+					else if ((wParam == WM_KEYUP || wParam == WM_SYSKEYUP) && (KeyUp != null)) 
+					{
 						KeyUp(this, kea);
 					}
 					if (kea.Handled)
