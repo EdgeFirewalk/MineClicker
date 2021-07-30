@@ -10,3 +10,6 @@ You can <b>deactivate</b> clicker to:
 * Change button settings
 * Change interval settings (Interval is time between two clicks in particular mode)
 * Use your keyboard without activating one of clicker's modes (In chats for example)
+
+### IF CLICKER DOESN'T WORK
+Sometimes clicker works everywhere but in Minecraft (or other game). Just launch clicker as administrator
