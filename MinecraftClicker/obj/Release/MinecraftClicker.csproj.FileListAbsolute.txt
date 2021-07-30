@@ -28,3 +28,6 @@ C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\obj\Release\MinecraftCl
 C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\obj\Release\MinecraftClicker.csproj.CoreCompileInputs.cache
 C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\obj\Release\MinecraftClicker.exe
 C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\obj\Release\MinecraftClicker.pdb
+C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\bin\Release\Newtonsoft.Json.dll
+C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\bin\Release\Newtonsoft.Json.xml
+C:\Users\Игорь\Desktop\MineClicker\MinecraftClicker\obj\Release\MinecraftClicker.csproj.CopyComplete

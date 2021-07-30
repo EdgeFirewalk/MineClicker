@@ -13,16 +13,16 @@
         <Label Content="INTERVAL" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" FontFamily="/MinecraftClicker;component/Resources/#Minecraft" Foreground="White" Width="109" HorizontalContentAlignment="Center" FontSize="20" Height="29"/>
 
         <Label Content="Quick Break:" HorizontalAlignment="Left" Margin="1,25,0,0" VerticalAlignment="Top" Height="37" Width="160" FontFamily="Minecraft" FontSize="25" Foreground="White"/>
-        <TextBox x:Name="quickBreakTextBox" Text="P" HorizontalAlignment="Left" Height="33" Margin="161,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" KeyDown="quickBreakTextBox_KeyDown" IsEnabled="False"/>
-        <TextBox x:Name="quickBreakIntervalTextBox" Text="500" HorizontalAlignment="Left" Height="33" Margin="336,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
+        <TextBox x:Name="quickBreakTextBox" Text="-" HorizontalAlignment="Left" Height="33" Margin="161,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" KeyDown="quickBreakTextBox_KeyDown" IsEnabled="False"/>
+        <TextBox x:Name="quickBreakIntervalTextBox" Text="-" HorizontalAlignment="Left" Height="33" Margin="336,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
 
         <Label Content="Quick Build:" HorizontalAlignment="Left" Margin="1,67,0,0" VerticalAlignment="Top" Height="37" Width="160" FontFamily="Minecraft" FontSize="25" Foreground="White"/>
-        <TextBox x:Name="quickBuildTextBox" Text="B" HorizontalAlignment="Left" Height="33" Margin="161,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" IsEnabled="False" KeyDown="quickBuildTextBox_KeyDown"/>
-        <TextBox x:Name="quickBuildIntervalTextBox" Text="500" HorizontalAlignment="Left" Height="33" Margin="336,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
+        <TextBox x:Name="quickBuildTextBox" Text="-" HorizontalAlignment="Left" Height="33" Margin="161,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" IsEnabled="False" KeyDown="quickBuildTextBox_KeyDown"/>
+        <TextBox x:Name="quickBuildIntervalTextBox" Text="-" HorizontalAlignment="Left" Height="33" Margin="336,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
 
         <Label Content="Replace:" HorizontalAlignment="Left" Margin="1,108,0,0" VerticalAlignment="Top" Height="38" Width="160" FontFamily="Minecraft" FontSize="25" Foreground="White"/>
-        <TextBox x:Name="quickReplaceTextBox" Text="F" HorizontalAlignment="Left" Height="34" Margin="161,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" KeyDown="replaceTextBox_KeyDown" IsEnabled="False"/>
-        <TextBox x:Name="quickReplaceIntervalTextBox" Text="100" HorizontalAlignment="Left" Height="34" Margin="336,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
+        <TextBox x:Name="quickReplaceTextBox" Text="-" HorizontalAlignment="Left" Height="34" Margin="161,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontFamily="Minecraft" FontSize="25" KeyDown="replaceTextBox_KeyDown" IsEnabled="False"/>
+        <TextBox x:Name="quickReplaceIntervalTextBox" Text="-" HorizontalAlignment="Left" Height="34" Margin="336,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" FontFamily="Minecraft" FontSize="25" IsEnabled="False"/>
 
         <Button x:Name="disableClickerButton" Content="Deactivate" HorizontalAlignment="Left" Margin="324,161,0,0" VerticalAlignment="Top" Width="114" Height="43" Click="disableClickerButton_Click" FontFamily="Minecraft" FontSize="20"/>
 
